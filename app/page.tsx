@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main style={{ maxWidth: 800, margin: "40px auto", fontFamily: "system-ui" }}>
@@ -15,6 +17,11 @@ export default function Home() {
         <li>Advection–Diffusion Equation Solver</li>
         <li>Inverse Heat Equation Problem</li>
       </ul>
+
+      {/* Add a link to the Projects page */}
+      <p>
+        <Link href="/projects">See all projects →</Link>
+      </p>
 
       <h2>Skills</h2>
       <ul>
